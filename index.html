@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Alquiler de piso en Hermanas Mirabal - Mairena del Aljarafe</title>
+  <meta name="description" content="Piso de 2 habitaciones en Urbanización Hermanas Mirabal (Fase 1). Piscina, pádel, garaje, trastero de 10 m² y buena conexión con Sevilla.">
+  <style>
+    :root{
+      --bg:#f7f8fb; --card:#ffffff; --accent:#2b6cb0; --muted:#6b7280; --radius:12px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;padding:1.25rem;background:var(--bg);color:#111;line-height:1.45}
+    .container{max-width:1200px;margin:0 auto}
+    header.hero{display:grid;grid-template-columns:1fr 500px;gap:1.5rem;align-items:center}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95));border-radius:var(--radius);padding:1.25rem;box-shadow:0 6px 20px rgba(18,38,63,0.06)}
+    h1{margin:0;font-size:1.4rem;color:var(--accent)}
+    h2.subtitle{margin:0.35rem 0 0.75rem;font-size:1.1rem;color:#0f1724}
+    p.lead{margin:0 0 1rem;color:var(--muted)}
+
+    /* slideshow corregido */
+    .slideshow{position:relative;border-radius:10px;overflow:hidden;box-shadow:0 8px 22px rgba(2,6,23,0.1);background:#000}
+    .slides{display:flex;transition:transform 0.5s ease;width:100%;}
+    .slides a{flex:0 0 100%;}
+    .slides a img{width:100%;min-width:100%;height:500px;object-fit:cover;display:block;}
+    .nav-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.85);border:none;padding:0.5rem;border-radius:8px;cursor:pointer;z-index:2}
+    .nav-btn.left{left:10px}
+    .nav-btn.right{right:10px}
+
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:1.25rem;margin-top:1.25rem}
+    .card{background:var(--card);border-radius:var(--radius);padding:1rem;box-shadow:0 6px 18px rgba(13,38,63,0.04)}
+    ul.features{padding:0;margin:0;list-style:none}
+    ul.features li{padding:0.45rem 0;border-bottom:1px solid #eef2f7;color:#0f1724}
+
+    /* contacto destacado */
+    aside.card.contacto{
+      background:#e6f0ff;
+      border:2px solid var(--accent);
+      text-align:center;
+      padding:1.5rem;
+    }
+    .telefono{
+      font-size:2rem;
+      color:var(--accent);
+      font-weight:bold;
+      margin:0.75rem 0;
+    }
+    .whatsapp-btn{
+      display:inline-flex;
+      align-items:center;
+      gap:0.5rem;
+      background:#25D366;
+      color:white;
+      text-decoration:none;
+      padding:0.75rem 1rem;
+      border-radius:999px;
+      font-size:1rem;
+      font-weight:500;
+      transition:background 0.2s;
+    }
+    .whatsapp-btn:hover{background:#1ebe5b;}
+
+    footer{margin-top:1.5rem;text-align:center;color:var(--muted);font-size:0.9rem}
+
+    @media (max-width:900px){
+      header.hero, .grid{grid-template-columns:1fr;}
+      .slides a img{height:280px}
+      .telefono{font-size:1.5rem;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div class="hero-card">
+        <h1>Alquiler de piso en Hermanas Mirabal - Mairena del Aljarafe</h1>
+        <h2 class="subtitle">Piso de dos habitaciones, piscina, pádel, lavadero, garaje y trastero</h2>
+        <p class="lead">Descubre este encantador piso de 2 habitaciones en la prestigiosa Urbanización Hermanas Mirabal (Fase 1) de Mairena del Aljarafe. Un hogar perfecto para disfrutar de la comodidad, el ocio y una excelente ubicación.</p>
+
+        <hr style="margin:1rem 0">
+        <strong>Este luminoso piso te ofrece:</strong>
+        <ul class="features" style="margin-top:0.6rem">
+          <li>2 habitaciones espaciosas y confortables</li>
+          <li>Espaciosa terraza/balcón de 4 m²</li>
+          <li>Dos baños completos</li>
+          <li>Lavadero funcional</li>
+          <li>Garaje y trastero <strong>de 16 y 10 m²</strong></li>
+          <li>Edificio con ascensor</li>
+        </ul>
+      </div>
+
+      <div class="slideshow card" aria-label="Galería de fotos del piso" id="fotos">
+        <div class="slides" id="slides">
+          <a href="imagen1.jpg" target="_blank"><img src="imagen1.jpg" alt="Imagen 1"></a>
+          <a href="imagen2.jpg" target="_blank"><img src="imagen2.jpg" alt="Imagen 2"></a>
+          <a href="imagen3.jpg" target="_blank"><img src="imagen3.jpg" alt="Imagen 3"></a>
+          <a href="imagen4.jpg" target="_blank"><img src="imagen4.jpg" alt="Imagen 4"></a>
+          <a href="imagen5.jpg" target="_blank"><img src="imagen5.jpg" alt="Imagen 5"></a>
+          <a href="imagen6.jpg" target="_blank"><img src="imagen6.jpg" alt="Imagen 6"></a>
+          <a href="imagen7.jpg" target="_blank"><img src="imagen7.jpg" alt="Imagen 7"></a>
+          <a href="imagen8.jpg" target="_blank"><img src="imagen8.jpg" alt="Imagen 8"></a>
+          <a href="imagen9.jpg" target="_blank"><img src="imagen9.jpg" alt="Imagen 9"></a>
+          <a href="imagen10.jpg" target="_blank"><img src="imagen10.jpg" alt="Imagen 10"></a>
+        </div>
+        <button class="nav-btn left" id="prev">◀</button>
+        <button class="nav-btn right" id="next">▶</button>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h3>Características detalladas</h3>
+        <ul>
+          <li><strong>Superficie:</strong> 80 m² construidos</li>
+          <li><strong>Recién pintado</strong>, mármol pulido y abrillantado</li>
+          <li><strong>Electrodomésticos:</strong> gran parte a estrenar</li>
+           <li><strong>Aire acondicionado:</strong> individual en habitación principal y salón-comedor</li>
+        </ul>
+
+        <h4 style="margin-top:0.5rem">Precio</h4>
+        <ul>
+          <li><strong>930 €</strong> amueblado</li>
+          <li><strong>800 €</strong> sin amueblar</li>
+        </ul>
+
+        <h4 style="margin-top:0.75rem">Ubicación</h4>
+        <p>Ubicación estratégica: A un paso de las principales carreteras, con excelente conexión con Sevilla y otras localidades. Cercanía al metro para moverte por el área metropolitana de forma rápida y sencilla.</p>
+
+        <hr>
+        <h4>Condiciones y observaciones</h4>
+        <ul>
+          <li>Duración del contrato: (1 año renovable)</li>
+          <li>Fianza: una mensualidad</li>
+          <li>Gastos de comunidad: incluidos en el precio</li>
+          <li>Mascotas: no permitidas</li>
+        </ul>
+      </section>
+
+      <aside class="card contacto">
+        <h3>Contacto</h3>
+        <p class="telefono">📞 604 943 130</p>
+        <a class="whatsapp-btn" href="https://wa.me/34604943130" target="_blank" rel="noopener">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="24" height="24"> Contactar por WhatsApp
+        </a>
+      </aside>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Alquiler en Hermanas Mirabal — Mairena del Aljarafe · Diseño simple y fácil de actualizar.</p>
+    </footer>
+  </div>
+
+  <script>
+    window.addEventListener('load', () => {
+      const slidesEl = document.getElementById('slides');
+      const slides = slidesEl.querySelectorAll('a');
+      let current = 0;
+
+      function update(){
+        const w = slidesEl.clientWidth || slides[0].clientWidth;
+        slidesEl.style.transform = `translateX(${-current * w}px)`;
+      }
+
+      function goTo(i){ current = (i+slides.length)%slides.length; update(); }
+
+      document.getElementById('prev').addEventListener('click', ()=> goTo(current-1));
+      document.getElementById('next').addEventListener('click', ()=> goTo(current+1));
+
+      window.addEventListener('resize', update);
+      update();
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>
